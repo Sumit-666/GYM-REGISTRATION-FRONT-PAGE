@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS CLUB</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/working-out-in-the-gym.jpg);
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid black; */
+        position: absolute;
+        left: 10px;
+        top: 20p;
+    }
+
+    .left img {
+        width: 140px;
+        height: 60px;
+
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        width: 55%;
+        /* border: 2px solid green; */
+        margin: 20px auto;
+        display: block;
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        /* border: 2px solid blue; */
+        right: 10px;
+        top: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .btn {
+        margin: 9px 0px;
+        background-color: black;
+        color: white;
+        height: 38px;
+        border: 2px solid white;
+        border-radius: 8px;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 20px;
+    }
+
+    .navbar a:hover,
+    .navbar a:active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .container {
+        border: 2px solid #200606;
+        margin: 86px 76px;
+        padding: 14px 5px;
+        width: 35%;
+        border-radius: 4%
+    }
+    .container h1{
+        color: black;
+        text-align: center;
+    }
+    .form-group input{
+        text-align: center;
+    padding: 8px;
+    margin: 6px auto;
+    border: 2px solid black;
+    display: block;
+    width: 413px;
+    }
+    .container button{
+        display: block;
+        width: 430px;
+        color: black;
+        margin: auto;
+        padding: 8px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/download.png" alt="">
+            <div>Fitness club</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+        <div class="container">
+            <h1>join this club now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <div><input type="text" placeholder="enter your name"></div>
+                    <div><input type="text" placeholder="enter your dob"></div>
+                    <div><input type="text" placeholder="enter your area"></div>
+                    <div><input type="text" placeholder="enter your age"></div>
+                    <div><button>submit</button></div>
+                </div>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
